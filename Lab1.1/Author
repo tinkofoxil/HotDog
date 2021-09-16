@@ -1,0 +1,49 @@
+package com.company;
+
+public class TestAuthor {
+
+    public static void main(String[] args) {
+	Author author1 = new Author("Stephen Edwin King", "stephen.king@gmail.com", 'm');
+    System.out.println(author1);
+    author1.setEmail("stephen_king@gmail.com");
+    System.out.println(author1);
+    Author author2 = new Author("Joanne Rowling", "joanne.rowling@gmail.com", 'f');
+    System.out.println(author2);
+    }
+}
+
+package com.company;
+
+public class Author {
+    private String name;
+    private String email;
+    private char gender;
+
+    public Author(String n, String e, char g ){
+        name = n;
+        email = e;
+        gender = g;
+    }
+
+    public void setEmail(String e){
+        this.email = e;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public char getGender(){
+        return gender;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + "(" + gender + ") at "  + email;
+    }
+
+}
