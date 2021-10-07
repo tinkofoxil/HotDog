@@ -48,6 +48,6 @@ public class Recursion {
         rec.taskOne(10);
         System.out.print("\n");
         System.out.println(rec.taskTwo(10));
-        System.out.println(rec.taskThree(23, 25));
+        System.out.println(rec.taskThree(15, 17));
     }
 }
