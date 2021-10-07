@@ -18,8 +18,11 @@ class Football extends JFrame
         setLayout(new FlowLayout());
         setSize(350,400);
         add(res);
+        res.setForeground(Color.pink);
         add(last);
+        last.setForeground(Color.RED);
         add(win);
+        win.setForeground(Color.GREEN);
         add(button1);
         add(button2);
 button1.addActionListener(new ActionListener()  //AC Milan
